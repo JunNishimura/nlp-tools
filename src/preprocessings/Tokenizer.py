@@ -3,7 +3,7 @@ import unidic
 from collections import namedtuple
 
 class MeCabTokenizer(object):
-    def __init__(self, dic_path=):
+    def __init__(self, dic_path):
         option = unidic.DICDIR
         if dic_path:
             option = '-d {}'.format(dic_path)
